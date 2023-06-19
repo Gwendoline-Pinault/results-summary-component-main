@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -15,33 +16,74 @@
   </style>
 </head>
 <body>
+  <article class="result-summary">
+    <section class="user-result">
+      <h2 class="user-result__title">Your Result</h2>
+      <p class="user-result__score">
+        <span class="global-score">76</span>
+        of 100
+      </p>
 
-  Your Result
-  76
-  of 100
+      <h3 class="user-result__level">Great</h3>
+      <p id="user-result__level-description">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <section class="user-summary">
+      <h2 class="user-summary__title">Summary</h2>
 
-  Reaction
-  80 / 100
+      <article id="reaction" class="test-category">
+        <div class="test-category__title">
+          <img src="./assets/images/icon-reaction.svg" alt="icon reaction">
+          <h3 class="test-category__reaction">Reaction</h3>
+        </div>
+        <p class="test-category__score">
+          <span class="test-category__first-score">80</span> 
+          / 100
+        </p>
+      </article>
 
-  Memory
-  92 / 100
+      <article id="memory" class="test-category">
+        <div class="test-category__title">
+          <img src="./assets/images/icon-memory.svg" alt="icon memory">
+          <h3 class="test-category__memory">Memory</h3>
+        </div>
+        <p class="test-category__score">
+          <span class="test-category__first-score">92</span> 
+          / 100
+        </p>
+      </article>
 
-  Verbal
-  61 / 100
+      <article id="verbal" class="test-category">
+        <div class="test-category__title">
+          <img src="./assets/images/icon-verbal.svg" alt="icon verbal">
+          <h3 class="test-category__verbal">Verbal</h3>
+        </div>
+        <p class="test-category__score">
+          <span class="test-category__first-score">61</span> 
+          / 100
+        </p>
+      </article>
 
-  Visual
-  72 / 100
+      <article id="visual" class="test-category">
+        <div class="test-category__title">
+          <img src="./assets/images/icon-visual.svg" alt="icon visual">
+          <h3 class="test-category__visual">Visual</h3>
+        </div>
+        <p class="test-category__score">
+          <span class="test-category__first-score">72</span> 
+          / 100
+        </p>
+      </article>
 
-  Continue
-  
+      <article id="button" class="test-category">
+        <p class="button">Continue</p>
+      </article>
+    </section>
+  </article>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Gwendoline PINAULT</a>.
   </div>
 </body>
 </html>
