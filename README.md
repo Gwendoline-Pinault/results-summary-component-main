@@ -49,3 +49,4 @@ Now, it's your turn to challenge you, good luck !
 ## Author
 
 - GitHub - [@Gwendoline-Pinault](https://github.com/Gwendoline-Pinault/results-summary-component-main)
+- Seeing the project - [result-summary](https://gwendoline-pinault.github.io/results-summary-component-main/)
