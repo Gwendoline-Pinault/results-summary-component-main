@@ -12,7 +12,7 @@ body {
 }
 
 .result-summary {
-  width: 40%;
+  width: 50%;
   border-radius: 15px;
   background-color: white;
   display: flex;
@@ -166,4 +166,68 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .result-summary {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .user-result {
+    width: 100vw;
+    margin: auto;
+    border-radius: 0 0 40px 40px;
+    margin: 0 0 10px;
+  }
+
+  .user-result__title {
+    padding: 10px 0;
+  }
+
+  .user-result__score {
+    width: 140px;
+    height: 140px;
+  }
+
+  .global-score {
+    font-size: 4rem;
+  }
+
+  #user-result__level-description{
+    width: 70%;
+  }
+
+  .user-summary {
+    padding-left: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .user-summary__title {
+    align-self: flex-start;
+    padding-left: 35px;
+  }
+
+  .user-summary article {
+    margin: 10px 0;
+    height: 60px;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 5px;
+  }
 }
